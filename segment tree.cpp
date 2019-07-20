@@ -1,10 +1,7 @@
-#include<bits/stdc++.h>
-using namespace std;
-#define ll long long
-#define N 1000
 ll tree[4*N];
 ll a[N];
 
+// 1 base index
 void build(ll node,ll start,ll end)
 {
 	if(start == end)
@@ -60,20 +57,11 @@ ll query(ll node, ll start, ll end, ll l, ll r)
     ll p2 = query(2*node+1, mid+1, end, l, r);
     return (p1 + p2);
 }
+/*  Description:-
+    build(1,1,n);
 
+    for a[5] = 6;
+    update(1,1,n,5,6);
 
-int main()
-{
-	#ifndef ONLINE_JUDGE
-        freopen("D:/Codes/C++/input.txt", "r", stdin);
-        freopen("D:/Codes/C++/output.txt", "w", stdout);
-    #endif
-
-    ll n = 12;
-	for(ll i = 1;i<=n;i++)
-		a[i] = i;
-
-	build(1,1,n);
-	update(1,1,n,5,6);
-	cout<<query(1,1,n,1,3)<<endl;
-}
+    query(1,1,n,1,3);
+*/

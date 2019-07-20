@@ -1,8 +1,3 @@
-#include<bits/stdc++.h>
-using namespace std;
-#define ll  long long int 
-
-
 void multi(ll  a[3][3], ll b[3][3])
 {
     ll c[3][3],i,j,k;
@@ -34,22 +29,4 @@ void power(ll a[3][3],ll n)
     if(n%2 != 0)
         multi(a,b);
     return;
-}
-
-int main()
-{
-	boost
-	#ifndef ONLINE_JUDGE
-        freopen("D:/Codes/C++/input.txt", "r", stdin);
-        freopen("D:/Codes/C++/output.txt", "w", stdout);
-    #endif
-    
-    ll t; cin>>t;
-    while(t--)
-    {
-    	int a = 4;
-        int b = 4;
-        cout<<a + b;
-    }
-    return 0;  
 }

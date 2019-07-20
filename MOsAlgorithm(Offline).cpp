@@ -1,12 +1,3 @@
-#include<bits/stdc++.h>
-using namespace std;
-#define ll  long long int
-#define F first
-#define S second 
-#define SETBITS(X) __builtin_popcount(x)
-#define boost ios_base::sync_with_stdio(false),cin.tie(NULL);
-const ll MOD = 1000000007;
-
 ll n,q;
 ll ans;
 

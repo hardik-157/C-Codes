@@ -1,17 +1,7 @@
-#include<bits/stdc++.h>
-using namespace std;
-#define ll  long long int 
-#define F first
-#define S second
-#define SETBITS(X) __builtin_popcount(x)
-#define boost ios_base::sync_with_stdio(false),cin.tie(NULL);
-const ll MOD = 1000000007;
-
 // 18 > log2(100000);
 ll parent[100002][18];
 vector<ll> edges[100002];
 ll depth[100002];
-
 
 // Don't forgot to clear edges vector 
 void dfs(ll u,ll p)
@@ -64,19 +54,7 @@ ll lca(ll u,ll v)
 
     return parent[u][0];
 }
-
-int main()
-{
-    boost
-    #ifndef ONLINE_JUDGE
-        freopen("D:/Codes/C++/input.txt", "r", stdin);
-        freopen("D:/Codes/C++/output.txt", "w", stdout);
-    #endif
-    
-    memset(parent,-1,sizeof(parent));
-    ll n,i;
-    cin>>n;
-
+/*  Steps:-
     for(i=1;i<n;i++)
     {
         ll u,v;
@@ -87,5 +65,4 @@ int main()
 
     dfs(1,0);
     build(n);
-    return 0;  
-}
+*/

@@ -1,12 +1,3 @@
-#include<bits/stdc++.h>
-using namespace std;
-#define ll  long long int 
-#define F first
-#define S second
-#define SETBITS(X) __builtin_popcount(x)
-#define boost ios_base::sync_with_stdio(false),cin.tie(NULL);
-const ll MOD = 1000000007;
-
 // k = number of bits
 // k - (return value) = number of independent xor values 
 ll gaussElimination(vector<ll>v, ll k)
@@ -23,9 +14,9 @@ ll gaussElimination(vector<ll>v, ll k)
     return i;
 }
 
-
-
 //-----------------------------#########------------------------------------------
+
+const ll N = 3;
 
 void swap_row(ll matrix[N][N+1], ll i, ll j)
 {
@@ -79,6 +70,9 @@ void backSubstitution(double matrix[N][N+1])
 
         x[i] = x[i]/matrix[i][i];
     }
+
+    for(ll i=0;i<N;i++)
+        cout<<x[i]<<endl;
 }
 
 void gaussianElimination(double matrix[N][N+1])
@@ -95,5 +89,5 @@ void gaussianElimination(double matrix[N][N+1])
         return; 
     }
 
-    backSubstitution(matrix); 
+    backSubstitution(matrix);
 }

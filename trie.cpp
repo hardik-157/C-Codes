@@ -1,6 +1,3 @@
-#include <bits/stdc++.h> 
-using namespace std; 
-
 struct node{
     vector<pair<ll,ll>> a;
     node *arr[3];

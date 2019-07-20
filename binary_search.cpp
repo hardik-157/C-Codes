@@ -1,12 +1,3 @@
-#include<bits/stdc++.h>
-using namespace std;
-#define ll  long long int 
-#define F first
-#define S second
-#define SETBITS(X) __builtin_popcount(x)
-#define boost ios_base::sync_with_stdio(false),cin.tie(NULL);
-const ll MOD = 1000000007;
-
 //returns '0' base indexing output
 // And a.size() if it is Greatest element
 //No other element which is Greater then it, is present.
@@ -62,28 +53,4 @@ int binarySearch(int arr[], int l, int r, int x)
             r = m - 1; 
     }
     return -1; 
-}
-
-int main()
-{
-	boost
-	#ifndef ONLINE_JUDGE
-        freopen("D:/Codes/C++/input.txt", "r", stdin);
-        freopen("D:/Codes/C++/output.txt", "w", stdout);
-    #endif
-    
-    ll t; cin>>t;
-    while(t--)
-    {
-    	int n,i;
-        cin>>n;
-        int a[n];
-        for(i=0;i<n;i++)
-        {
-            cin>>a[i];
-        }
-
-        cout<<lower_bound(a,n,6)<<endl;
-    }
-    return 0;  
 }

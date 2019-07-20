@@ -1,12 +1,3 @@
-#include<bits/stdc++.h>
-using namespace std;
-#define ll  long long int 
-#define F first
-#define S second
-#define SETBITS(X) __builtin_popcount(x)
-#define boost ios_base::sync_with_stdio(false),cin.tie(NULL);
-const ll MOD = 1000000007;
-
 ll power(ll a, ll b, ll p)
 {
     if(a == 0)
@@ -159,16 +150,4 @@ ll value2(ll n,ll p1,ll p2)
         lag = mul(lag,mdiv(sub(i,y.size() - 1),sub(i+1,0)));
     }
     return sum;   
-}
-
-int main()
-{
-    boost
-    #ifndef ONLINE_JUDGE
-        freopen("D:/Codes/C++/input.txt", "r", stdin);
-        freopen("D:/Codes/C++/output.txt", "w", stdout);
-    #endif
-    
-    cout<<value1(5,3)<<endl;
-    return 0;  
 }
