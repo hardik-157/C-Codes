@@ -10,7 +10,7 @@ vector<ll> dist(1005,1e13);
 void dijkstra(ll u)
 {
     priority_queue<pi, vector<pi>, greater<pi> > pq;
-    pq.push({u,0});
+    pq.push({0,u});
     dist[u] = 0;
 
     while(!pq.empty())
@@ -26,7 +26,7 @@ void dijkstra(ll u)
             if(dist[v] > (dist[u] + w))
             {
                 dist[v] = dist[u] + w;
-                pq.push({v,dist[v]});
+                pq.push({dist[v],v});
             }
         }
     }
